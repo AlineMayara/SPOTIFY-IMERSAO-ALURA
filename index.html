@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Imersão</title>
 
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/vars.css" />
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css" />
+    <link rel="stylesheet" href="./src/styles/main-content.css" />
 
     <link
       rel="stylesheet"
@@ -27,7 +29,7 @@
       <nav class="sidebar__navigation">
         <div class="logo">
           <a href="">
-            <img src="./assets/icons/logo-spotify.png" alt="Logo" />
+            <img src="./src/assets/icons/logo-spotify.png" alt="Logo" />
           </a>
         </div>
 
@@ -85,6 +87,54 @@
         </ul>
       </nav>
     </div>
+
+    <main>
+      <div class="main-container">
+        <nav class="header__navigation">
+          <div class="navigation">
+            <button class="arrow-left">
+              <img
+                src="./src/assets/icons/small-left.png"
+                alt="Seta esquerda"
+              />
+            </button>
+            <button class="arrow-right">
+              <img
+                src="./src/assets/icons/small-right.png"
+                alt="Seta direita"
+              />
+            </button>
+          </div>
+          <div class="header__search">
+            <img src="./src/assets/icons/search.png" alt="" />
+            <input
+              id="search-input"
+              type="text"
+              maxlength="800"
+              placeholder="O que você quer ouvir?"
+            />
+          </div>
+          <div class="header__login">
+            <button class="subscribe">Inscreva-se</button>
+            <button class="login">Entrar</button>
+          </div>
+        </nav>
+
+        <div class="content">
+          <h1>Bora Galera!</h1>
+          <div class="inner">
+            <p>
+              Estão prontos para embarcar nessa aventura,<br />
+              e navegar por todas as seções.
+            </p>
+          </div>
+          <div>
+            <div class="separator"></div>
+            <div>© 2025 Spotify AB</div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer>
       <div class="right-content">
